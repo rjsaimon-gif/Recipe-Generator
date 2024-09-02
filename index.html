@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
+    <div class="container">
       <h1>AI Recipe Generator</h1>
     </header>
     <main>
@@ -18,18 +18,18 @@
           required
           autofocus
           autocomplete="off"
+          class="instructions"
         />
-        <input type="submit" />
+        <input type="submit" class="submit-button" />
       </form>
-      <div>
+      <div class="recipe">
         12 amazing cucumber salads in the world
         <br />
         top side dishes to compliment your protein
       </div>
     </main>
-
     <footer>
-      Coded with 💜 by
+      Coded with ❤ by
       <a href="https://github.com/rjsaimon-gif"> Regina Saimon</a> and is
       open-sourced on
       <a href="https://github.com/rjsaimon-gif/Recipe-Generator" target="_blank"
@@ -38,6 +38,7 @@
       and hosted on
       <a href="ai-rjs-recipe-generator.netlify.app" target="_blank">Netlify</a>
     </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
