@@ -13,12 +13,11 @@ function generateRecipe(event) {
 
   let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "7a8aacadf32fc08tff87b375486o409c";
-  let prompt =
-    "User instructions: Generate a recipe about ${instructionsInput.value}";
-  let context =
-    "You are a reliable recipe expert. your mission is to generate a recipe in basic HTML. Be sure to follow the user's instructions.";
-  let apiURL =
-    "https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(prompt)}&context=${encodeURIComponent(context)}&key=${apiKey}";
+  let prompt = `User instructions: Generate a recipe about ${instructionsInput.value}`;
+  let context = `You are a reliable recipe expert. your mission is to generate a recipe in basic HTML. Be sure to follow the user's instructions.`;
+  let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(
+    prompt
+  )}&context=${encodeURIComponent(context)}&key=${apiKey}`;
 
   console.log("generating recipe");
   console.log("Prompt: ${prompt}");
