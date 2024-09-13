@@ -14,9 +14,6 @@ h1 {
 }
 form {
   display: flex;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
 }
 .instructions {
   padding: 10px;
@@ -35,7 +32,6 @@ form {
   font-size: 15px;
 }
 .recipe {
-  font-size: large;
   background-color: white;
   margin-top: 10px;
   color: black;
@@ -48,4 +44,30 @@ footer {
 }
 a {
   color: salmon;
+}
+
+.form-container {
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.hint {
+  opacity: 0.6;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+.hidden {
+  display: none;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.blink {
+  animation: blink 1s step-start 0s infinite;
 }
